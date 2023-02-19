@@ -16,25 +16,25 @@ public class Score {
 
     void inputGeneration() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("몇 기인지 입력해주세요.");
+        System.out.println("몇 기인지 입력해주세요.");
         this.generation = scanner.nextInt();
     }
 
     void inputHtml() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("HTML 과목 점수를 입력해주세요.");
+        System.out.println("HTML 과목 점수를 입력해주세요.");
         this.html = scanner.nextInt();
     }
 
     void inputCss() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("CSS 과목 점수를 입력해주세요.");
+        System.out.println("CSS 과목 점수를 입력해주세요.");
         this.css = scanner.nextInt();
     }
 
     void inputJavaScript() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Javascript 과목 점수를 입력해주세요.");
+        System.out.println("Javascript 과목 점수를 입력해주세요.");
         this.javascript = scanner.nextInt();
     }
 
