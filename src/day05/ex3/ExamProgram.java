@@ -6,11 +6,11 @@ public class ExamProgram {
 
     void execute() {
 
-        score.inputGeneration();
-        score.inputHtml();
-        score.inputCss();
-        score.inputJavaScript();
-        score.calculateAverage();
+        score.getGeneration();
+        score.getHtml();
+        score.getCss();
+        score.getJavaScript();
+        score.setAverage();
         score.printResult();
         score.printScoreMax();
         score.printScoreMin();

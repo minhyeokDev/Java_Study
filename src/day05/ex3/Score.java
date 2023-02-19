@@ -14,32 +14,32 @@ public class Score {
     private int min; // 세 과목 중 최저점
 
 
-    void inputGeneration() {
+    void getGeneration() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("몇 기인지 입력해주세요.");
         this.generation = scanner.nextInt();
     }
 
-    void inputHtml() {
+    void getHtml() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("HTML 과목 점수를 입력해주세요.");
         this.html = scanner.nextInt();
     }
 
-    void inputCss() {
+    void getCss() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("CSS 과목 점수를 입력해주세요.");
         this.css = scanner.nextInt();
     }
 
-    void inputJavaScript() {
+    void getJavaScript() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Javascript 과목 점수를 입력해주세요.");
         this.javascript = scanner.nextInt();
     }
 
 
-    void calculateAverage() {
+    void setAverage() {
         this.average = (double) (this.html + this.css + this.javascript) / 3;
     }
 
