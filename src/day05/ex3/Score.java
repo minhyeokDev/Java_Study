@@ -43,23 +43,31 @@ public class Score {
         this.average = (double) (this.html + this.css + this.javascript) / 3;
     }
 
+    void printDetails1() { // 1,2기에 해당하는 불/합 출력
+        if (this.average >= 60) {
+            System.out.println("합격입니다.");
+        } else {
+            System.out.println("불합격입니다.");
+        }
+    }
+
+    void printDetails2() { //3기에 해당하는 불/합 출력
+        if (this.average >= 70) {
+            System.out.print("합격입니다.");
+        } else if ((this.html == 100 && this.css == 100) || (this.html == 100
+            && this.javascript == 100) || (this.css == 100 && this.javascript == 100)) {
+            System.out.println("합격입니다.");
+        } else {
+            System.out.println("불합격입니다.");
+        }
+    }
+
     void printResult() {
 
         if (this.generation == 1 || this.generation == 2) {
-            if (this.average >= 60) {
-                System.out.println("합격입니다.");
-            } else {
-                System.out.println("불합격입니다.");
-            }
+            printDetails1();
         } else if (this.generation == 3) {
-            if (this.average >= 70) {
-                System.out.print("합격입니다.");
-            } else if ((this.html == 100 && this.css == 100) || (this.html == 100
-                && this.javascript == 100) || (this.css == 100 && this.javascript == 100)) {
-                System.out.println("합격입니다.");
-            } else {
-                System.out.println("불합격입니다.");
-            }
+            printDetails2();
         }
     }
 
