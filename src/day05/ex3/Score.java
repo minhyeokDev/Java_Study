@@ -90,7 +90,7 @@ public class Score {
         } else if (this.javascript <= this.html && this.javascript <= this.css) {
             this.min = this.javascript;
         }
-        System.out.println("전체 과목 중 최고점은 " + this.min + "점 입니다.");
+        System.out.println("전체 과목 중 최저점은 " + this.min + "점 입니다.");
 
     }
 
