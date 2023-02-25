@@ -18,6 +18,7 @@ public class FitnessCenterMemberManagingProgram {
         while (true) {
             System.out.println("원하시는 번호를 입력해주세요.");
             System.out.println("1. 회원 등록");
+            System.out.println("2. 회원 조회");
             menu = scanner.nextInt();
             try {
                 if (menu == 1) {
@@ -26,6 +27,11 @@ public class FitnessCenterMemberManagingProgram {
                     int age = this.receiveAge(scanner);
                     memberRepository.add(email,name,age);
                     System.out.println("회원 등록이 성공적으로 완료되었습니다.");
+                }
+                if(menu == 2){
+                    System.out.println("조회하려는 회원의 이름을 입력해주세요.");
+                    String name = this.receiveName(scanner);
+                    memberRepository.check(name);
                 }
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
