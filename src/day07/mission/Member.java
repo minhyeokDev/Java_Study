@@ -1,6 +1,5 @@
 package day07.mission;
 
-import java.util.Scanner;
 
 public class Member {
 
@@ -8,8 +7,10 @@ public class Member {
     private String email;
     private String name;
 
-    public Member(){
-
+    public Member(String email, String name, int age) {
+        this.email = email;
+        this.name = name;
+        this.age = age;
     }
 
     public String getEmail() {
@@ -22,17 +23,5 @@ public class Member {
 
     public int getAge() {
         return this.age;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 }
